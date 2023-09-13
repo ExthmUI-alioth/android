@@ -21,14 +21,14 @@
 要开始同步源码，请使用这些命令
 
 ```shell
-repo init -u https://github.com/exthmui/android.git -b exthm-11
+repo init -u https://github.com/ExthmUI-alioth/android.git -b exthm-11
 repo sync
 ```
 
 您也可以使用如下命令来初始化仓库，这样可以节省磁盘空间
 
 ```shell
-repo init -u https://github.com/exthmui/android.git -b exthm-11 --depth=1
+repo init -u https://github.com/ExthmUI-alioth/android.git -b exthm-11 --depth=1
 repo sync
 ```
 

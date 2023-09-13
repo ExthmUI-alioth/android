@@ -21,10 +21,15 @@
   <default remote="lineage"
            sync-c="true"
            sync-j="4" />
+  
+  <remote  name="exthm-alioth"
+           fetch="https://github.com/ExthmUI-alioth"
+           review="review.exthmui.cn"
+           revision="refs/heads/exthm-11" />
 
   <project path="build/blueprint" remote="lineage" name="android_build_blueprint" groups="pdk,tradefed" />
   <project path="art" remote="lineage" name="android_art" groups="pdk" />
-  <project path="bionic" remote="lineage" name="android_bionic" groups="pdk" />
+  <project path="bionic" name="android_bionic" remote="exthm-alioth" />
   <project path="bootable/recovery" remote="lineage" name="android_bootable_recovery" groups="pdk" />
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" remote="aosp" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />

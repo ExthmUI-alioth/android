@@ -10,6 +10,11 @@
            fetch="https://github.com/exTHmUI-Devices"
            review="review.exthmui.cn"
            revision="refs/heads/exthm-11" />
+	
+<remote  name="exthm-alioth"
+           fetch="https://github.com/ExthmUI-alioth"
+           review="review.exthmui.cn"
+           revision="refs/heads/exthm-11" />
 
   <project path="build/make" name="android_build" groups="pdk" remote="exthm" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -34,11 +39,11 @@
   <project path="external/libfuse" name="android_external_libfuse" remote="exthm" />
 
   <!-- Frameworks -->
-  <project path="frameworks/base" name="android_frameworks_base" remote="exthm" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="exthm-alioth" />
   <project path="frameworks/av" name="android_frameworks_av" remote="exthm" />
 
   <!-- Packages -->
-  <project path="packages/apps/exTHmSettings" name="android_packages_apps_exTHmSettings" remote="exthm" />
+  <project path="packages/apps/exTHmSettings" name="android_packages_apps_exTHmSettings" remote="exthm-alioth" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="exthm" />
   <project path="packages/apps/APlayer" name="android_packages_apps_APlayer" remote="exthm" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="exthm" />
@@ -60,7 +65,7 @@
   <project path="packages/overlays/CaptivePortalConfig" remote="exthm" name="android_packages_overlays_CaptivePortalConfig" />
 
   <!-- System -->
-  <project path="system/core" name="android_system_core" remote="exthm" />
+  <project path="system/core" name="android_system_core" remote="exthm-alioth" />
   <project path="system/netd" remote="exthm" name="android_system_netd" groups="pdk" />
   <project path="vendor/exthm" name="android_vendor_exthm" remote="exthm" />
   <project path="lineage-sdk" name="android_lineage-sdk" remote="exthm" />
